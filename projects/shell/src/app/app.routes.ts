@@ -8,9 +8,9 @@ export const routes: Routes = [
     path: 'todo',
     loadComponent: () =>
       loadRemoteModule({
-        remoteName: 'todo',
+        remoteName: 'taskapp',
         exposedModule: './TaskListComponent',
-      }).then(m => m.TodoListComponent),
+      }).then(m => m.TaskListComponent),
   },
   { path: '**', component: HomeComponent },
 ];
